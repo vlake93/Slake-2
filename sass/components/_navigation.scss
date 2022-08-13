@@ -1,0 +1,18 @@
+.nav {
+  font-size: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-logo {
+    margin-left: 5rem;
+  }
+
+  &-links {
+    display: flex;
+    margin-right: 5rem;
+    gap: 3rem;
+    list-style: none;
+    text-transform: uppercase;
+  }
+}
