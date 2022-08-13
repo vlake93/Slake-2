@@ -1,0 +1,22 @@
+{
+  "name": "slake-2",
+  "version": "1.0.0",
+  "description": "Landing page for Slake",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlake93/Slake-2.git"
+  },
+  "author": "Vic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlake93/Slake-2/issues"
+  },
+  "homepage": "https://github.com/vlake93/Slake-2#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
