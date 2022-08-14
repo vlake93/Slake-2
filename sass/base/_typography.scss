@@ -4,21 +4,21 @@
 }
 
 .section-header {
-  max-width: 80%;
+  max-width: 50%;
   color: $slake-gold;
-  margin: auto;
+  margin-right: 5rem;
   gap: 5rem;
-  line-height: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 20rem;
+  // margin-left: 20rem;
 
   &-text {
     // margin-left: 10rem;
+    line-height: 1.5;
     text-align: center;
     font-size: 3rem;
-    width: 100%;
+    width: 50%;
   }
 }

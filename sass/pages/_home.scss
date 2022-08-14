@@ -33,28 +33,31 @@
   background: url(../../assets/dine-cover-2.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
-  padding: 10rem 20% 20rem 0;
-  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
 
   &-container {
     background-color: $color-white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    min-width: 80vw;
-    min-height: 60vh;
-    align-items: center;
+    max-width: 90%;
+    min-height: 80%;
   }
 
   &-carousel {
-    // margin-left: rem;
+    margin-right: 2rem;
+    max-width: 50%;
+    max-height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
-    &-img {
-      // max-height: 50%;
-      max-width: 60%;
+    &-slide {
+      max-width: 100%;
     }
   }
 }

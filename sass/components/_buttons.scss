@@ -1,4 +1,9 @@
 .discover-btn {
-  width: 12rem;
+  color: $color-white;
+  background-color: $slake-gold;
+  width: 15rem;
   height: 5rem;
+  border: $color-white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
