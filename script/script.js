@@ -9,9 +9,18 @@ const num2 = document.querySelector(".num2");
 const plus3 = document.querySelector(".plus3");
 const minus3 = document.querySelector(".minus3");
 const num3 = document.querySelector(".num3");
+const nav = document.querySelector(".nav");
 let a = 1;
 let b = 1;
 let c = 1;
+
+window.addEventListener("scroll", () => {
+  nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  nav.style.position = "fixed";
+  // if (window.scroll(0, 0)) {
+  //   nav.style.backgroundColor = "transparent";
+  // }
+});
 
 plus.addEventListener("click", () => {
   if (a < 9) {

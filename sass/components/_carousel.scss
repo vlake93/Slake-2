@@ -116,36 +116,3 @@
   z-index: 3;
   opacity: 1;
 }
-
-// [id^="item"] {
-//   display: none;
-// }
-// .item-4 {
-//   z-index: 2;
-//   opacity: 1;
-//   background: url("../../assets/dine-1.jpg");
-//   background-size: cover;
-//   background-position: 100% 100%;
-// }
-// .item-5 {
-//   background: url("../../assets/dine-2.jpg");
-//   background-size: cover;
-//   // background-position: 100% 100%;
-// }
-// .item-6 {
-//   background: url("../../assets/dine-3.jpg");
-//   background-size: cover;
-//   background-position: 100% 100%;
-// }
-
-// *:target ~ .item-4 {
-//   opacity: 0;
-// }
-// #item-4:target ~ .item-4 {
-//   opacity: 1;
-// }
-// #item-5:target ~ .item-5,
-// #item-6:target ~ .item-6 {
-//   z-index: 3;
-//   opacity: 1;
-// }
