@@ -20,4 +20,41 @@
   &-select {
     width: 23rem;
   }
+
+  &-number {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem;
+  }
+
+  &-guest {
+    display: flex;
+    justify-content: space-between;
+    width: 37rem;
+  }
+}
+
+.guest-number {
+  margin-left: 2rem;
+}
+
+.plus,
+.plus2,
+.plus3,
+.minus,
+.minus2,
+.minus3 {
+  cursor: pointer;
+}
+
+.num,
+.num2,
+.num3 {
+  margin: 0.5rem;
+  // padding: 0.5rem;
+}
+
+.children {
+  // margin-right: 5rem;
 }

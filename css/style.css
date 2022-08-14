@@ -172,6 +172,31 @@ header {
     gap: 2rem; }
   .stay-form-select {
     width: 23rem; }
+  .stay-form-number {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem; }
+  .stay-form-guest {
+    display: flex;
+    justify-content: space-between;
+    width: 37rem; }
+
+.guest-number {
+  margin-left: 2rem; }
+
+.plus,
+.plus2,
+.plus3,
+.minus,
+.minus2,
+.minus3 {
+  cursor: pointer; }
+
+.num,
+.num2,
+.num3 {
+  margin: 0.5rem; }
 
 .nav {
   font-size: 2.5rem;
