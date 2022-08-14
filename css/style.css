@@ -38,16 +38,16 @@ header {
     width: 50%; }
 
 .discover-btn {
-  color: #fff;
-  background-color: #d0a624;
+  color: #d0a624;
+  background-color: #1f2c51;
   width: 15rem;
   height: 5rem;
-  border: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  border: none; }
   .discover-btn:hover {
-    background-color: #a8861d; }
+    background-color: #12192d; }
 
 .carousel-wrapper {
   min-height: 100%;

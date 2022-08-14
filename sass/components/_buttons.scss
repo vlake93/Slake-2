@@ -1,14 +1,14 @@
 .discover-btn {
-  color: $color-white;
-  background-color: $slake-gold;
+  color: $slake-gold;
+  background-color: $slake-blue;
   width: 15rem;
   height: 5rem;
-  border: $color-white;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.5s;
+  border: none;
 
   &:hover {
-    background-color: #a8861d;
+    background-color: $color-dark-blue;
   }
 }
