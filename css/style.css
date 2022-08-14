@@ -16,6 +16,10 @@ html {
 header {
   height: 100vh; }
 
+.heading-secondary {
+  margin-top: 10rem;
+  font-size: 10rem; }
+
 .nav {
   font-size: 2.5rem;
   padding-top: 3rem;
@@ -52,3 +56,11 @@ header {
   .stay-img {
     width: 50rem;
     height: auto; }
+
+.header {
+  padding-bottom: 20rem; }
+
+.section-dine {
+  background: url(../../assets/dine-cover.jpg);
+  margin: 20rem auto 20rem auto;
+  height: 50vh; }
