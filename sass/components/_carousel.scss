@@ -1,0 +1,151 @@
+.carousel-wrapper {
+  min-height: 100%;
+  position: relative;
+  min-width: 100%;
+  display: block;
+  margin: 50px auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow {
+  border: solid $slake-gold;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.arrow-prev {
+  // height: 1rem;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"] {
+  display: none;
+}
+.item-1,
+.item-4 {
+  z-index: 2;
+  opacity: 1;
+}
+
+.item-1 {
+  background: url("../../assets/stay-1.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-2 {
+  background: url("../../assets/stay-2.jpg");
+  background-size: cover;
+}
+
+.item-3 {
+  background: url("../../assets/stay-3.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-4 {
+  background: url("../../assets/dine-1.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-5 {
+  background: url("../../assets/dine-2.jpg");
+  background-size: cover;
+}
+
+.item-6 {
+  background: url("../../assets/dine-3.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-7 {
+  background: url("../../assets/play-1.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-8 {
+  background: url("../../assets/play-2.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.item-9 {
+  background: url("../../assets/play-3.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+*:target ~ .item-1,
+*:target ~ .item-4,
+*:target ~ .item-7 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1,
+#item-4:target ~ .item-4,
+#item-7:target ~ .item-7 {
+  opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-5:target ~ .item-5,
+#item-6:target ~ .item-6,
+#item-8:target ~ .item-8,
+#item-9:target ~ .item-9 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// [id^="item"] {
+//   display: none;
+// }
+// .item-4 {
+//   z-index: 2;
+//   opacity: 1;
+//   background: url("../../assets/dine-1.jpg");
+//   background-size: cover;
+//   background-position: 100% 100%;
+// }
+// .item-5 {
+//   background: url("../../assets/dine-2.jpg");
+//   background-size: cover;
+//   // background-position: 100% 100%;
+// }
+// .item-6 {
+//   background: url("../../assets/dine-3.jpg");
+//   background-size: cover;
+//   background-position: 100% 100%;
+// }
+
+// *:target ~ .item-4 {
+//   opacity: 0;
+// }
+// #item-4:target ~ .item-4 {
+//   opacity: 1;
+// }
+// #item-5:target ~ .item-5,
+// #item-6:target ~ .item-6 {
+//   z-index: 3;
+//   opacity: 1;
+// }

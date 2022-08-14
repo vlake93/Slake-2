@@ -11,30 +11,17 @@
   }
 }
 
-.stay {
-  display: flex;
-
-  &-text {
-    max-width: 50%;
-  }
-
-  &-img {
-    width: 50rem;
-    height: auto;
-  }
-}
-
 .header {
   padding-bottom: 20rem;
 }
 
-.section-dine {
-  margin: $section-margin;
-  background: url(../../assets/dine-cover-2.jpg) no-repeat center center scroll;
+.section-stay {
+  margin: $margin-section;
+  background: url(../../assets/stay-cover-1.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   height: 90vh;
 
@@ -49,15 +36,74 @@
 
   &-carousel {
     margin-right: 2rem;
-    max-width: 50%;
-    max-height: 80%;
+    height: 50vh;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: $shadow-carousel;
+  }
+}
 
-    &-slide {
-      max-width: 100%;
-    }
+.section-dine {
+  margin: $margin-section;
+  background: url(../../assets/dine-cover-2.jpg) no-repeat center center scroll;
+  background-size: cover;
+  background-position: 100% 100%;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+
+  &-container {
+    margin: 0;
+    background-color: $color-white;
+    display: flex;
+
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 90%;
+    min-height: 80%;
+  }
+
+  &-carousel {
+    margin-left: 2rem;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-carousel;
+  }
+}
+
+.section-play {
+  margin: $margin-section;
+  background: url(../../assets/play-cover.jpg) no-repeat center center scroll;
+  background-size: cover;
+  background-position: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  &-container {
+    margin: 0;
+    background-color: $color-white;
+    display: flex;
+
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 90%;
+    min-height: 80%;
+  }
+
+  &-carousel {
+    margin-left: 2rem;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-carousel;
   }
 }

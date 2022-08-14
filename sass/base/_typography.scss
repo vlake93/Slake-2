@@ -1,21 +1,17 @@
 .heading-secondary {
-  // margin: $heading-margin;
   font-size: 10rem;
 }
 
 .section-header {
   max-width: 50%;
   color: $slake-gold;
-  margin-right: 5rem;
   gap: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-left: 20rem;
 
   &-text {
-    // margin-left: 10rem;
     line-height: 1.5;
     text-align: center;
     font-size: 3rem;

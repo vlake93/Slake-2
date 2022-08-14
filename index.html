@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lobster&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Uchen&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -30,7 +36,39 @@
       </nav>
     </header>
     <main>
-      <section class="section-stay"></section>
+      <section class="section-stay">
+        <div class="section-stay-container">
+          <div class="section-header">
+            <h2 class="section-header-text">
+              Relax in one of our opulent rooms
+            </h2>
+            <button class="section-header-button discover-btn">
+              discover more
+            </button>
+          </div>
+          <div class="section-stay-carousel">
+            <div class="carousel-wrapper">
+              <span id="item-1"></span>
+              <span id="item-2"></span>
+              <span id="item-3"></span>
+              <div class="carousel-item item-1">
+                <a href="#item-3" class="arrow-prev arrow"></a>
+                <a href="#item-2" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-2">
+                <a href="#item-1" class="arrow-prev arrow"></a>
+                <a href="#item-3" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-3">
+                <a href="#item-2" class="arrow-prev arrow"></a>
+                <a href="#item-1" class="arrow-next arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-dine">
         <div class="section-dine-container">
           <div class="section-header">
@@ -42,16 +80,61 @@
             </button>
           </div>
           <div class="section-dine-carousel">
-            <div class="section-dine-carousel-slides"></div>
-            <img
-              class="section-dine-carousel-slide"
-              src="assets/dine-1.jpg"
-              alt=""
-            />
+            <div class="carousel-wrapper">
+              <span id="item-4"></span>
+              <span id="item-5"></span>
+              <span id="item-6"></span>
+              <div class="carousel-item item-4">
+                <a href="#item-6" class="arrow-prev arrow"></a>
+                <a href="#item-5" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-5">
+                <a href="#item-4" class="arrow-prev arrow"></a>
+                <a href="#item-6" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-6">
+                <a href="#item-5" class="arrow-prev arrow"></a>
+                <a href="#item-4" class="arrow-next arrow"></a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- <h2 class="heading-secondary">STAY</h2> -->
+      <section class="section-play">
+        <div class="section-play-container">
+          <div class="section-header">
+            <h2 class="section-header-text">
+              Experience cuisine from around the world
+            </h2>
+            <button class="section-header-button discover-btn">
+              discover more
+            </button>
+          </div>
+          <div class="section-play-carousel">
+            <div class="carousel-wrapper">
+              <span id="item-7"></span>
+              <span id="item-8"></span>
+              <span id="item-9"></span>
+              <div class="carousel-item item-7">
+                <a href="#item-9" class="arrow-prev arrow"></a>
+                <a href="#item-8" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-8">
+                <a href="#item-7" class="arrow-prev arrow"></a>
+                <a href="#item-9" class="arrow-next arrow"></a>
+              </div>
+
+              <div class="carousel-item item-9">
+                <a href="#item-8" class="arrow-prev arrow"></a>
+                <a href="#item-7" class="arrow-next arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
