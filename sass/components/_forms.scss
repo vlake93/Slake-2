@@ -1,0 +1,23 @@
+.stay-form {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &-date {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &-location {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+  &-select {
+    width: 23rem;
+  }
+}

@@ -27,7 +27,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 5rem;
+  margin: 0 10rem;
+  padding: 2rem; }
   .section-header-text {
     line-height: 1.5;
     text-align: center;
@@ -152,27 +155,46 @@ header {
   z-index: 3;
   opacity: 1; }
 
+.stay-form {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .stay-form-date {
+    width: 100%;
+    display: flex;
+    gap: 1rem; }
+  .stay-form-location {
+    width: 100%;
+    display: flex;
+    gap: 2rem; }
+  .stay-form-select {
+    width: 23rem; }
+
 .nav {
   font-size: 2.5rem;
   padding-top: 3rem;
+  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
   .nav-logo {
     height: 5rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 2rem; }
   .nav-links {
-    color: goldenrod;
+    color: #d0a624;
     display: flex;
     gap: 5rem;
     list-style: none;
-    text-transform: uppercase;
-    text-decoration: none; }
+    text-transform: uppercase; }
   .nav-link {
     cursor: pointer;
     text-decoration: none; }
     .nav-link:link, .nav-link:visited {
+      color: #d0a624;
       text-decoration: none; }
 
 .bg-video {
@@ -202,7 +224,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 90%;
+    max-width: 80%;
     min-height: 80%; }
   .section-stay-carousel {
     margin-right: 2rem;

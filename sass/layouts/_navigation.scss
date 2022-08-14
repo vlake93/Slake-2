@@ -1,6 +1,7 @@
 .nav {
   font-size: 2.5rem;
   padding-top: 3rem;
+  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +9,15 @@
 
   &-logo {
     height: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   &-links {
-    color: goldenrod;
+    color: $slake-gold;
     display: flex;
     gap: 5rem;
     list-style: none;
     text-transform: uppercase;
-    text-decoration: none;
   }
 
   &-link {
@@ -26,6 +26,7 @@
 
     &:link,
     &:visited {
+      color: $slake-gold;
       text-decoration: none;
     }
   }

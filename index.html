@@ -28,11 +28,11 @@
         <img class="nav-logo" src="assets/slake.png" alt="Slake Logo" />
         <!-- <div class="burger-button">burger</div> -->
         <ul class="nav-links">
-          <li class="nav-link"><a href="#">home</a></li>
-          <li class="nav-link"><a href="#relax">stay</a></li>
-          <li class="nav-link"><a href="#dine">dine</a></li>
-          <li class="nav-link"><a href="#play">play</a></li>
-          <li class="nav-link"><a href="#">contact</a></li>
+          <li><a class="nav-link" href="#">home</a></li>
+          <li><a class="nav-link" href="#relax">stay</a></li>
+          <li><a class="nav-link" href="#dine">dine</a></li>
+          <li><a class="nav-link" href="#play">play</a></li>
+          <li><a class="nav-link" href="#">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -40,11 +40,33 @@
       <section class="section-stay" id="relax">
         <div class="section-stay-container">
           <div class="section-header">
-            <h2 class="section-header-text">
+            <!-- <h2 class="section-header-text">
               Relax in one of our opulent rooms
-            </h2>
+            </h2> -->
+            <form class="stay-form" action="#">
+              <div class="stay-form-date">
+                <label for="from">
+                  from
+                  <input id="from" type="date" />
+                </label>
+                <label for="to">
+                  to
+                  <input id="to" type="date" />
+                </label>
+              </div>
+              <label class="stay-form-location" for="branch">
+                location
+                <select class="stay-form-select" id="branch">
+                  <option value="0">Select branch</option>
+                  <option value="usa">Las Vegas, USA</option>
+                  <option value="china">Macau, SAR China</option>
+                  <option value="malta">Valleta, Malta</option>
+                  <option value="monaco">Monaco, Monaco</option>
+                </select>
+              </label>
+            </form>
             <button class="section-header-button discover-btn">
-              discover more
+              check availability
             </button>
           </div>
           <div class="section-stay-carousel">
