@@ -29,7 +29,32 @@
 }
 
 .section-dine {
-  background: url(../../assets/dine-cover.jpg);
-  margin: 20rem auto 20rem auto;
-  height: 50vh;
+  margin: $section-margin;
+  background: url(../../assets/dine-cover-2.jpg) no-repeat center center scroll;
+  background-size: cover;
+  background-position: 100% 100%;
+  padding: 10rem 20% 20rem 0;
+  height: 80vh;
+
+  &-container {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80vw;
+    min-height: 60vh;
+    align-items: center;
+  }
+
+  &-carousel {
+    // margin-left: rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      // max-height: 50%;
+      max-width: 60%;
+    }
+  }
 }

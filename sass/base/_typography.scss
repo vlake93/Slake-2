@@ -1,4 +1,24 @@
 .heading-secondary {
-  margin-top: 10rem;
+  // margin: $heading-margin;
   font-size: 10rem;
+}
+
+.section-header {
+  max-width: 80%;
+  color: $slake-gold;
+  margin: auto;
+  gap: 5rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rem;
+
+  &-text {
+    // margin-left: 10rem;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
 }
