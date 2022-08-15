@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-carousel;
+    box-shadow: $shadow-default;
   }
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-carousel;
+    box-shadow: $shadow-default;
   }
 }
 
@@ -100,6 +100,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-carousel;
+    box-shadow: $shadow-default;
+  }
+}
+
+.section-vip {
+  height: 90vh;
+  padding-top: 2.5rem;
+  background: lightcyan;
+
+  &-cards {
+    height: 60vh;
+    display: flex;
+    flex-basis: auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    height: 30%;
+  }
+
+  &-card {
+    margin: 5rem;
+    height: 100%;
+    box-shadow: $shadow-default;
   }
 }
