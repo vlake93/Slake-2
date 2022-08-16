@@ -1,0 +1,66 @@
+.section-vip {
+  height: 90vh;
+  &-cards {
+    margin-top: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &-one,
+    &-two {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      gap: 50rem;
+    }
+  }
+
+  &-card {
+    height: 100%;
+    box-shadow: $shadow-default;
+  }
+}
+
+.section-vip-card-box {
+  position: relative;
+  height: 50%;
+}
+
+.section-vip-card-front,
+.section-vip-card-back {
+  height: 100%;
+  width: 100%;
+  perspective: 50rem;
+  transition: all 1s;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.section-vip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.section-vip-card-box:hover .section-vip-card-front {
+  transform: rotateY(180deg);
+}
+
+.section-vip-card-box:hover .section-vip-card-back {
+  transform: rotateY(0deg);
+}
+
+.section-vip-card-box:hover .section-vip-card-front {
+  transform: rotateY(180deg);
+}
+
+.section-vip-card-box:hover .section-vip-card-back {
+  transform: rotateY(0deg);
+}

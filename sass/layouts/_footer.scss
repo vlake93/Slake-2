@@ -41,6 +41,11 @@
   &-social {
     &-logo {
       height: 4rem;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
