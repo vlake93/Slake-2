@@ -72,8 +72,11 @@ minus3.addEventListener("click", () => {
 
 let burger = document.querySelector(".burger");
 const hiddenMenu = document.querySelector(".nav-hidden-menu");
+const hiddenImg = document.querySelector(".nav-hidden-image");
 
 burger.addEventListener("click", () => {
   nav.style.transform = "translateY(-20rem)";
   hiddenMenu.style.transform = "translateY(0)";
+  hiddenMenu.style.transform = "translateY(0)";
+  hiddenImg.style.transform = "translateY(0)";
 });

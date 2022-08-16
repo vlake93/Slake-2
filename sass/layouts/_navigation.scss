@@ -105,4 +105,18 @@
       }
     }
   }
+
+  &-image {
+    background: url(../../assets/dine-cover-2.jpg) no-repeat fixed center;
+    position: fixed;
+    left: 0;
+    padding: 22rem;
+    font-size: 5rem;
+    background-color: $slake-blue;
+    height: 100vh;
+    width: 50vw;
+    z-index: 5;
+    transform: translateY(150rem);
+    transition: all 2s;
+  }
 }
