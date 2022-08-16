@@ -211,7 +211,8 @@ header {
   justify-content: space-between;
   position: block;
   min-width: 100%;
-  z-index: 4; }
+  z-index: 4;
+  transition: all 1s; }
   .nav-logo {
     height: 8rem;
     margin-bottom: 2rem;
@@ -260,6 +261,18 @@ header {
     gap: 2rem; }
   .footer-social-logo {
     height: 4rem; }
+  .footer-branches {
+    display: flex;
+    margin-top: 2rem;
+    gap: 10rem; }
+    .footer-branches-logo {
+      height: 7rem;
+      filter: brightness(30%);
+      cursor: pointer;
+      transition: all 0.5s; }
+      .footer-branches-logo:hover {
+        transform: scale(1.1);
+        filter: brightness(100%); }
   .footer-header {
     margin-top: 2rem;
     font-size: 2rem;

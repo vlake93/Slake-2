@@ -44,6 +44,24 @@
     }
   }
 
+  &-branches {
+    display: flex;
+    margin-top: 2rem;
+    gap: 10rem;
+
+    &-logo {
+      height: 7rem;
+      filter: brightness(30%);
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(100%);
+      }
+    }
+  }
+
   &-header {
     margin-top: 2rem;
     font-size: 2rem;
