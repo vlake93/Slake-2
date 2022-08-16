@@ -12,3 +12,10 @@
     background-color: $color-dark-blue;
   }
 }
+
+.burger {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  z-index: 10;
+}

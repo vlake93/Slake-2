@@ -69,3 +69,11 @@ minus3.addEventListener("click", () => {
     num3.innerText = c;
   }
 });
+
+let burger = document.querySelector(".burger");
+const hiddenMenu = document.querySelector(".nav-hidden-menu");
+
+burger.addEventListener("click", () => {
+  nav.style.transform = "translateY(-20rem)";
+  hiddenMenu.style.transform = "translateY(0)";
+});
