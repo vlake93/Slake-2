@@ -67,41 +67,32 @@ header {
       justify-content: center;
       align-items: center;
       height: 50%;
-      gap: 50rem; }
+      gap: 20rem; }
   .section-vip-card {
     height: 100%;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.section-vip-card-box {
-  position: relative;
-  height: 50%; }
-
-.section-vip-card-front,
-.section-vip-card-back {
-  height: 100%;
-  width: 100%;
-  perspective: 50rem;
-  transition: all 1s;
-  overflow: hidden;
-  backface-visibility: hidden; }
-
-.section-vip-card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotateY(180deg); }
-
-.section-vip-card-box:hover .section-vip-card-front {
-  transform: rotateY(180deg); }
-
-.section-vip-card-box:hover .section-vip-card-back {
-  transform: rotateY(0deg); }
-
-.section-vip-card-box:hover .section-vip-card-front {
-  transform: rotateY(180deg); }
-
-.section-vip-card-box:hover .section-vip-card-back {
-  transform: rotateY(0deg); }
+    .section-vip-card-box {
+      position: relative;
+      height: 50%;
+      transition: all 1s; }
+      .section-vip-card-box:hover .section-vip-card-front {
+        transform: rotateY(180deg); }
+      .section-vip-card-box:hover .section-vip-card-back {
+        transform: rotateY(0deg); }
+      .section-vip-card-box:hover {
+        transform: rotate(90deg); }
+    .section-vip-card-front, .section-vip-card-back {
+      height: 100%;
+      width: 100%;
+      perspective: 50rem;
+      transition: all 1s;
+      overflow: hidden;
+      backface-visibility: hidden; }
+    .section-vip-card-back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateY(180deg); }
 
 .carousel-wrapper {
   min-height: 100%;
