@@ -232,7 +232,7 @@ header {
 .footer {
   padding: 2rem;
   background-color: #222;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -244,11 +244,15 @@ header {
     width: 80%;
     color: #fff;
     border-top: 3px solid #d0a624;
+    border-bottom: 3px solid #d0a624;
     display: flex;
     justify-content: space-between; }
     .footer-detail-stay {
       gap: 0.75rem;
       margin-bottom: 0; }
+  .footer-contact {
+    display: flex;
+    justify-content: space-between; }
   .footer-socials {
     margin-top: 2rem;
     margin-left: 0.8rem;
@@ -266,6 +270,17 @@ header {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
       color: #bbb; }
+    .footer-header-contact {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      text-decoration: none; }
+      .footer-header-contact-logo {
+        height: 2rem; }
+      .footer-header-contact:link, .footer-header-contact:visited {
+        color: #bbb; }
+      .footer-header-contact:hover, .footer-header-contact:active {
+        color: #fff; }
     .footer-header-link {
       display: block;
       margin-left: 1rem;
