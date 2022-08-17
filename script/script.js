@@ -24,16 +24,18 @@ for (let i = 0; i < plus.length; i++) {
   });
 }
 
+if (window.scrollY > 10) {
+  console.log("WORKING");
+}
+
 const checker = document.querySelector(".burger");
 const burger = document.querySelector(".burger-btn");
 const hiddenMenu = document.querySelector(".nav-hidden-menu");
 const hiddenImg = document.querySelector(".nav-hidden-image");
 const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
-const firstLine = document.querySelector(".burger-line::before");
-const secondLine = document.querySelector(".burger-line");
-const thirdLine = document.querySelector(".burger-line::after");
 
 burger.addEventListener("click", () => {
+  console.log("burger", checker.checked);
   // nav.style.transform = "translateY(-20rem)";
   hiddenMenu.style.transform = "translateY(0)";
   hiddenImg.style.transform = "translateY(0)";
@@ -46,13 +48,14 @@ burger.addEventListener("click", () => {
 
 hiddenLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    // nav.style.transform = "translateY(0rem)";
+    if (checker.checked) {
+      checker.checked = false;
+    }
     hiddenMenu.style.transform = "translateY(150rem)";
     hiddenImg.style.transform = "translateY(-150rem)";
     firstLine.style.transform = "rotate(0deg)";
     secondLine.style.transform = "rotate(0deg)";
     thirdLine.style.transform = "rotate(0deg)";
-    checker.checked === "false";
   });
 });
 
