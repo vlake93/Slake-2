@@ -1,76 +1,37 @@
 "use strict";
 
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
-const num = document.querySelector(".num");
-const plus2 = document.querySelector(".plus2");
-const minus2 = document.querySelector(".minus2");
-const num2 = document.querySelector(".num2");
-const plus3 = document.querySelector(".plus3");
-const minus3 = document.querySelector(".minus3");
-const num3 = document.querySelector(".num3");
 const nav = document.querySelector(".nav");
-let a = 1;
-let b = 1;
-let c = 1;
+let a = [1, 1, 1];
 
-// const plus = document.querySelectorAll(".plus");
-// const minus = document.querySelectorAll(".minus");
-// const num = document.querySelectorAll(".num");
+const plus = document.querySelectorAll(".plus");
+const minus = document.querySelectorAll(".minus");
+const num = document.querySelectorAll(".num");
+for (let i = 0; i < plus.length; i++) {
+  plus[i].addEventListener("click", () => {
+    if (a[i] < 9) {
+      a[i]++;
+      a[i] = a[i] < 10 ? "0" + a[i] : a[i];
+      num[i].innerText = a[i];
+    }
+  });
 
-plus.addEventListener("click", () => {
-  if (a < 9) {
-    a++;
-    a = a < 10 ? "0" + a : a;
-    num.innerText = a;
-  }
-});
-
-minus.addEventListener("click", () => {
-  if (a > 1) {
-    a--;
-    a = a < 10 ? "0" + a : a;
-    num.innerText = a;
-  }
-});
-
-plus2.addEventListener("click", () => {
-  if (b < 9) {
-    b++;
-    b = b < 10 ? "0" + b : b;
-    num2.innerText = b;
-  }
-});
-
-minus2.addEventListener("click", () => {
-  if (b > 1) {
-    b--;
-    b = b < 10 ? "0" + b : b;
-    num2.innerText = b;
-  }
-});
-
-plus3.addEventListener("click", () => {
-  if (c < 9) {
-    c++;
-    c = c < 10 ? "0" + c : c;
-    num3.innerText = c;
-  }
-});
-
-minus3.addEventListener("click", () => {
-  if (c > 1) {
-    c--;
-    c = c < 10 ? "0" + c : c;
-    num3.innerText = c;
-  }
-});
+  minus[i].addEventListener("click", () => {
+    if (a[i] > 1) {
+      a[i]--;
+      a[i] = a[i] < 10 ? "0" + a[i] : a[i];
+      num[i].innerText = a[i];
+    }
+  });
+}
 
 const checker = document.querySelector(".burger");
 const burger = document.querySelector(".burger-btn");
 const hiddenMenu = document.querySelector(".nav-hidden-menu");
 const hiddenImg = document.querySelector(".nav-hidden-image");
 const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
+const firstLine = document.querySelector(".burger-line::before");
+const secondLine = document.querySelector(".burger-line");
+const thirdLine = document.querySelector(".burger-line::after");
 
 burger.addEventListener("click", () => {
   // nav.style.transform = "translateY(-20rem)";
@@ -88,6 +49,9 @@ hiddenLinks.forEach((link) => {
     // nav.style.transform = "translateY(0rem)";
     hiddenMenu.style.transform = "translateY(150rem)";
     hiddenImg.style.transform = "translateY(-150rem)";
+    firstLine.style.transform = "rotate(0deg)";
+    secondLine.style.transform = "rotate(0deg)";
+    thirdLine.style.transform = "rotate(0deg)";
     checker.checked === "false";
   });
 });
