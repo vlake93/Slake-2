@@ -1,6 +1,11 @@
-@media (max-width: 50em) {
-  .nav {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 112.5em) {
+  html {
+    font-size: 10%;
   }
 }
+
+// @media screen and (max-width: 117.25em) {
+//   html {
+//     font-size: 50%;
+//   }
+// }

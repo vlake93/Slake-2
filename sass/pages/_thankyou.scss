@@ -1,0 +1,40 @@
+.thank-body {
+  background: url(../../assets/thank-cover.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-container {
+  padding-bottom: 5rem;
+  background-color: $slake-blue;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 10px solid $slake-gold;
+  border-bottom: 10px solid $slake-gold;
+  box-shadow: $shadow-default;
+}
+
+.image-header {
+  height: 10rem;
+}
+
+.thank-header,
+.email-header {
+  width: 50%;
+  font-size: 6rem;
+  color: $slake-gold;
+  text-align: center;
+  text-shadow: $shadow-default;
+}
+
+.thank-header {
+  margin-top: 5rem;
+}

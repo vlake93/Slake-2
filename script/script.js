@@ -94,12 +94,3 @@ const closeModal2 = function () {
 playButton.addEventListener("click", openModal2);
 overlay2.addEventListener("click", closeModal2);
 playCloseModal.addEventListener("click", closeModal2);
-
-// )(() => {
-//   const dataName = document.querySelector("[data-name]");
-//   const qStr = window.location.search;
-//   const urlParams = new URLSearchParams(qStr);
-//   const name = urlParams.get("name");
-
-//   dataName.textContent = `Thank you, ${name}!`;
-// })();

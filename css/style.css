@@ -1,7 +1,6 @@
-@media (max-width: 50em) {
-  .nav {
-    display: flex;
-    flex-direction: row; } }
+@media (max-width: 112.5em) {
+  html {
+    font-size: 10%; } }
 
 *,
 *::before,
@@ -279,17 +278,10 @@ header {
 .guest-text {
   font-size: 2.5rem; }
 
-.plus,
-.plus2,
-.plus3,
-.minus,
-.minus2,
-.minus3 {
+.plus {
   cursor: pointer; }
 
-.num,
-.num2,
-.num3 {
+.num {
   margin: 0.5rem; }
 
 .vip-form {
@@ -435,7 +427,7 @@ header {
 .footer {
   padding: 2rem;
   background-color: #222;
-  height: 55vh;
+  height: 58rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -444,7 +436,7 @@ header {
     margin-bottom: 2.5rem; }
   .footer-detail {
     padding: 2rem;
-    width: 80%;
+    width: 156rem;
     color: #fff;
     border-top: 3px solid #d0a624;
     border-bottom: 3px solid #d0a624;
@@ -720,3 +712,39 @@ header {
   cursor: pointer;
   border: none;
   background: transparent; }
+
+.thank-body {
+  background: url(../../assets/thank-cover.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.thank-container {
+  padding-bottom: 5rem;
+  background-color: #1f2c51;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 10px solid #d0a624;
+  border-bottom: 10px solid #d0a624;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.image-header {
+  height: 10rem; }
+
+.thank-header,
+.email-header {
+  width: 50%;
+  font-size: 6rem;
+  color: #d0a624;
+  text-align: center;
+  text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.thank-header {
+  margin-top: 5rem; }
