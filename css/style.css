@@ -24,7 +24,7 @@ header {
 .section-header {
   max-width: 50%;
   color: #d0a624;
-  gap: 5rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,11 +32,16 @@ header {
   border-radius: 5rem;
   margin: 0 10rem;
   padding: 2rem; }
-  .section-header-text {
+  .section-header-title {
     line-height: 1.5;
     text-align: center;
     font-size: 3rem;
-    width: 80%; }
+    width: 70%; }
+  .section-header-text {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60%;
+    color: #a8861d; }
 
 .discover-btn {
   color: #d0a624;
@@ -50,11 +55,53 @@ header {
   .discover-btn:hover {
     background-color: #12192d; }
 
-.burger {
+#burger-toggle {
+  opacity: 0;
+  position: absolute; }
+
+#burger-toggle:checked + .burger-btn > span {
+  transform: rotate(45deg); }
+
+#burger-toggle:checked + .burger-btn > span::before {
+  top: 0;
+  transform: rotate(0deg); }
+
+#burger-toggle:checked + .burger-btn > span::after {
+  top: 0;
+  transform: rotate(90deg); }
+
+#burger-toggle:checked ~ .menu__box {
+  left: 0 !important; }
+
+.burger-btn {
   position: fixed;
-  top: 50%;
-  right: 2rem;
-  z-index: 10; }
+  display: flex;
+  background-color: #1f2c51;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000; }
+
+.burger-btn > span,
+.burger-btn > span::before,
+.burger-btn > span::after {
+  display: block;
+  position: absolute;
+  top: 2.25rem;
+  width: 100%;
+  height: 2px;
+  background-color: #d0a624;
+  transition-duration: 0.25s; }
+
+.burger-btn > span::before {
+  content: "";
+  top: -8px; }
+
+.burger-btn > span::after {
+  content: "";
+  top: 8px; }
 
 .section-vip {
   height: 90vh; }
@@ -75,8 +122,7 @@ header {
       height: 50%;
       gap: 20rem; }
   .section-vip-card {
-    height: 100%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    height: 100%; }
     .section-vip-card-box {
       position: relative;
       height: 50%;
@@ -93,7 +139,9 @@ header {
       perspective: 50rem;
       transition: all 1s;
       overflow: hidden;
-      backface-visibility: hidden; }
+      backface-visibility: hidden;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      border-radius: 1rem; }
     .section-vip-card-back {
       position: absolute;
       top: 0;
@@ -252,6 +300,52 @@ header {
 .num3 {
   margin: 0.5rem; }
 
+.vip-form {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 4rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #d0a624;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .vip-form-header {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: #d0a624; }
+  .vip-form-label {
+    display: flex;
+    height: 100%;
+    justify-content: space-between; }
+    .vip-form-label-number {
+      display: flex; }
+      .vip-form-label-number-select {
+        border-right: none; }
+      .vip-form-label-number-contact {
+        width: 25.5rem; }
+  .vip-form-input {
+    margin-left: 5rem;
+    width: 30rem;
+    height: 3rem; }
+  .vip-form-agree {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    width: 50rem; }
+    .vip-form-agree-input {
+      width: 2rem;
+      height: 2rem; }
+  .vip-form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.submit-button {
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
 .nav {
   font-size: 2.5rem;
   padding: 1rem 0;
@@ -260,7 +354,8 @@ header {
   align-items: center;
   justify-content: space-between;
   min-width: 100%;
-  z-index: 4;
+  z-index: 1;
+  position: absolute;
   transition: all 1s; }
   .nav-logo {
     height: 8rem;
@@ -299,7 +394,7 @@ header {
   padding: 22rem;
   font-size: 5rem;
   background-color: #1f2c51;
-  height: 100vh;
+  height: 110vh;
   width: 50vw;
   z-index: 5;
   transform: translateY(-150rem);
@@ -376,7 +471,7 @@ header {
     gap: 2rem; }
   .footer-social-logo {
     height: 4rem;
-    transition: all 1s; }
+    transition: all 0.5s; }
     .footer-social-logo:hover {
       transform: scale(1.2); }
   .footer-branches {
@@ -533,4 +628,6 @@ header {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .section-vip {
-  height: 90vh; }
+  height: 90vh;
+  background: url(../../assets/vip-cover.jpg) no-repeat center;
+  background-size: cover; }

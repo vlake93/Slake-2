@@ -57,3 +57,70 @@
 .num3 {
   margin: 0.5rem;
 }
+
+.vip-form {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 4rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  gap: 1.5rem;
+  color: $slake-gold;
+  box-shadow: $shadow-default;
+
+  &-header {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: $slake-gold;
+  }
+
+  &-label {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+    &-number {
+      display: flex;
+
+      &-select {
+        border-right: none;
+      }
+
+      &-contact {
+        width: 25.5rem;
+      }
+    }
+  }
+
+  &-input {
+    margin-left: 5rem;
+    width: 30rem;
+    height: 3rem;
+  }
+
+  &-agree {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    width: 50rem;
+
+    &-input {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.submit-button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

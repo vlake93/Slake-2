@@ -14,13 +14,9 @@ let a = 1;
 let b = 1;
 let c = 1;
 
-window.addEventListener("scroll", () => {
-  nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  nav.style.position = "fixed";
-  // if (window.scroll(0, 0)) {
-  //   nav.style.backgroundColor = "transparent";
-  // }
-});
+// const plus = document.querySelectorAll(".plus");
+// const minus = document.querySelectorAll(".plus");
+// const num = document.querySelectorAll(".plus");
 
 plus.addEventListener("click", () => {
   if (a < 9) {
@@ -70,13 +66,37 @@ minus3.addEventListener("click", () => {
   }
 });
 
-let burger = document.querySelector(".burger");
+const checker = document.querySelector(".burger");
+const burger = document.querySelector(".burger-btn");
 const hiddenMenu = document.querySelector(".nav-hidden-menu");
 const hiddenImg = document.querySelector(".nav-hidden-image");
+const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
 
 burger.addEventListener("click", () => {
   nav.style.transform = "translateY(-20rem)";
   hiddenMenu.style.transform = "translateY(0)";
-  hiddenMenu.style.transform = "translateY(0)";
   hiddenImg.style.transform = "translateY(0)";
+  if (checker.checked) {
+    nav.style.transform = "translateY(0rem)";
+    hiddenMenu.style.transform = "translateY(150rem)";
+    hiddenImg.style.transform = "translateY(-150rem)";
+  }
 });
+
+hiddenLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.style.transform = "translateY(0rem)";
+    hiddenMenu.style.transform = "translateY(150rem)";
+    hiddenImg.style.transform = "translateY(-150rem)";
+    checker.checked === "false";
+  });
+});
+
+// )(() => {
+//   const dataName = document.querySelector("[data-name]");
+//   const qStr = window.location.search;
+//   const urlParams = new URLSearchParams(qStr);
+//   const name = urlParams.get("name");
+
+//   dataName.textContent = `Thank you, ${name}!`;
+// })();

@@ -23,7 +23,6 @@
 
   &-card {
     height: 100%;
-    box-shadow: $shadow-default;
 
     &-box {
       position: relative;
@@ -50,6 +49,8 @@
       transition: all 1s;
       overflow: hidden;
       backface-visibility: hidden;
+      box-shadow: $shadow-default;
+      border-radius: 1rem;
     }
 
     &-back {
