@@ -15,8 +15,8 @@ let b = 1;
 let c = 1;
 
 // const plus = document.querySelectorAll(".plus");
-// const minus = document.querySelectorAll(".plus");
-// const num = document.querySelectorAll(".plus");
+// const minus = document.querySelectorAll(".minus");
+// const num = document.querySelectorAll(".num");
 
 plus.addEventListener("click", () => {
   if (a < 9) {
@@ -73,11 +73,11 @@ const hiddenImg = document.querySelector(".nav-hidden-image");
 const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
 
 burger.addEventListener("click", () => {
-  nav.style.transform = "translateY(-20rem)";
+  // nav.style.transform = "translateY(-20rem)";
   hiddenMenu.style.transform = "translateY(0)";
   hiddenImg.style.transform = "translateY(0)";
   if (checker.checked) {
-    nav.style.transform = "translateY(0rem)";
+    // nav.style.transform = "translateY(0rem)";
     hiddenMenu.style.transform = "translateY(150rem)";
     hiddenImg.style.transform = "translateY(-150rem)";
   }
@@ -85,12 +85,50 @@ burger.addEventListener("click", () => {
 
 hiddenLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    nav.style.transform = "translateY(0rem)";
+    // nav.style.transform = "translateY(0rem)";
     hiddenMenu.style.transform = "translateY(150rem)";
     hiddenImg.style.transform = "translateY(-150rem)";
     checker.checked === "false";
   });
 });
+
+const modal = document.querySelector(".dine-modal");
+const overlay = document.querySelector(".overlay");
+const dineCloseModal = document.querySelector(".dine-close-modal");
+const dineButton = document.querySelector(".dine-button");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+dineButton.addEventListener("click", openModal);
+dineCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+const modal2 = document.querySelector(".play-modal");
+const overlay2 = document.querySelector(".overlay-2");
+const playButton = document.querySelector(".play-button");
+const playCloseModal = document.querySelector(".play-close-modal");
+
+const openModal2 = function () {
+  modal2.classList.remove("hidden");
+  overlay2.classList.remove("hidden");
+};
+
+const closeModal2 = function () {
+  modal2.classList.add("hidden");
+  overlay2.classList.add("hidden");
+};
+
+playButton.addEventListener("click", openModal2);
+overlay2.addEventListener("click", closeModal2);
+playCloseModal.addEventListener("click", closeModal2);
 
 // )(() => {
 //   const dataName = document.querySelector("[data-name]");

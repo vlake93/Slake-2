@@ -82,7 +82,8 @@ header {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  z-index: 1000; }
+  z-index: 1000;
+  border-radius: 30%; }
 
 .burger-btn > span,
 .burger-btn > span::before,
@@ -91,7 +92,7 @@ header {
   position: absolute;
   top: 2.25rem;
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #d0a624;
   transition-duration: 0.25s; }
 
@@ -631,3 +632,100 @@ header {
   height: 90vh;
   background: url(../../assets/vip-cover.jpg) no-repeat center;
   background-size: cover; }
+
+.hidden {
+  display: none; }
+
+.dine-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180rem;
+  height: 90rem;
+  background: url(../../assets/dine-modal.jpg);
+  background-size: cover;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10; }
+  .dine-modal-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem; }
+  .dine-modal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .dine-modal-grid-content {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #fff;
+      border: 2px solid #d0a624; }
+      .dine-modal-grid-content-image {
+        height: 20rem;
+        width: auto; }
+      .dine-modal-grid-content-text {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem; }
+
+.play-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180rem;
+  height: 90rem;
+  background: url(../../assets/play-modal.jpg);
+  background-size: cover;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10; }
+  .play-modal-header {
+    color: #d0a624;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem; }
+  .play-modal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .play-modal-grid-content {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #fff;
+      border: 2px solid #d0a624; }
+      .play-modal-grid-content-image {
+        height: 50rem;
+        width: 40rem; }
+      .play-modal-grid-content-text {
+        color: #d0a624;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem; }
+
+.overlay,
+.overlay-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5; }
+
+.dine-close-modal,
+.play-close-modal {
+  color: #d0a624;
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  font-size: 5rem;
+  cursor: pointer;
+  border: none;
+  background: transparent; }

@@ -109,3 +109,125 @@
   background: url(../../assets/vip-cover.jpg) no-repeat center;
   background-size: cover;
 }
+
+.hidden {
+  display: none;
+}
+
+.dine-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180rem;
+  height: 90rem;
+  background: url(../../assets/dine-modal.jpg);
+  background-size: cover;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  &-header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-content {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: $color-white;
+      border: 2px solid $slake-gold;
+
+      &-image {
+        height: 20rem;
+        width: auto;
+      }
+
+      &-text {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.play-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180rem;
+  height: 90rem;
+  background: url(../../assets/play-modal.jpg);
+  background-size: cover;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  &-header {
+    color: $slake-gold;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-content {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: $color-white;
+      border: 2px solid $slake-gold;
+
+      &-image {
+        height: 50rem;
+        width: 40rem;
+      }
+
+      &-text {
+        color: $slake-gold;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.overlay,
+.overlay-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.dine-close-modal,
+.play-close-modal {
+  color: $slake-gold;
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  font-size: 5rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
