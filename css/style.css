@@ -57,7 +57,7 @@ header {
 
 #burger-toggle {
   opacity: 0;
-  position: absolute; }
+  position: fixed; }
   #burger-toggle:checked + .burger-btn > .burger-line {
     transform: rotate(45deg); }
   #burger-toggle:checked + .burger-btn > .burger-line::before {

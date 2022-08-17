@@ -36,11 +36,9 @@ const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
 
 burger.addEventListener("click", () => {
   console.log("burger", checker.checked);
-  // nav.style.transform = "translateY(-20rem)";
   hiddenMenu.style.transform = "translateY(0)";
   hiddenImg.style.transform = "translateY(0)";
   if (checker.checked) {
-    // nav.style.transform = "translateY(0rem)";
     hiddenMenu.style.transform = "translateY(150rem)";
     hiddenImg.style.transform = "translateY(-150rem)";
   }

@@ -15,21 +15,7 @@
 
 #burger-toggle {
   opacity: 0;
-  position: absolute;
-
-  // &:checked + .burger-btn > span {
-  //   transform: rotate(45deg);
-  // }
-
-  // &:checked + .burger-btn > span::before {
-  //   top: 0;
-  //   transform: rotate(0deg);
-  // }
-
-  // &:checked + .burger-btn > span::after {
-  //   top: 0;
-  //   transform: rotate(90deg);
-  // }
+  position: fixed;
 
   &:checked + .burger-btn > .burger-line {
     transform: rotate(45deg);
