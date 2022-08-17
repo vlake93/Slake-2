@@ -1,32 +1,37 @@
 .section-vip {
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &-cards {
-    margin-top: auto;
-    height: 60vh;
+    gap: 15rem;
+    height: 50rem;
+    width: 100rem;
     display: flex;
-    flex-direction: column;
-    flex-basis: auto auto;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     &-one,
     &-two {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50%;
-      gap: 20rem;
+      height: 30rem;
+      gap: 10rem;
     }
   }
 
   &-card {
-    height: 100%;
+    height: 20rem;
 
     &-box {
       position: relative;
-      height: 50%;
       transition: all 1s;
 
       &:hover .section-vip-card-front {
@@ -43,8 +48,8 @@
 
     &-front,
     &-back {
-      height: 100%;
-      width: 100%;
+      height: 20rem;
+      width: 35rem;
       perspective: 50rem;
       transition: all 1s;
       overflow: hidden;

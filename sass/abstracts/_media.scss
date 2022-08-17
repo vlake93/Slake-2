@@ -1,11 +1,29 @@
-@media (max-width: 112.5em) {
+@media screen and (max-width: 112.5em) {
   html {
-    font-size: 10%;
+    font-size: 55%;
   }
 }
 
-// @media screen and (max-width: 117.25em) {
-//   html {
-//     font-size: 50%;
-//   }
-// }
+@media screen and (max-width: 87.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 79.625em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 71.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 63.75em) {
+  html {
+    font-size: 35%;
+  }
+}
