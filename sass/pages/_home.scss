@@ -19,21 +19,21 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 90vh;
+  height: 85rem;
 
   &-container {
     background-color: $color-white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 80%;
-    min-height: 80%;
+    width: 150rem;
+    height: 70rem;
   }
 
   &-carousel {
     margin-right: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
   background-position: 100% 100%;
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 85rem;
 
   &-container {
     margin: 0;
@@ -57,14 +57,14 @@
 
     flex-direction: row-reverse;
     align-items: center;
-    max-width: 90%;
-    min-height: 80%;
+    width: 150rem;
+    height: 70rem;
   }
 
   &-carousel {
     margin-left: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,23 +80,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85rem;
 
   &-container {
     margin: 0;
     background-color: $color-white;
     display: flex;
-
     flex-direction: row-reverse;
     align-items: center;
-    max-width: 70%;
-    min-height: 80%;
+    width: 140rem;
+    height: 70rem;
   }
 
   &-carousel {
     margin-left: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +118,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180rem;
+  width: 150rem;
   height: 90rem;
   background: url(../../assets/dine-modal.jpg);
   background-size: cover;
@@ -165,7 +164,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180rem;
+  width: 150rem;
   height: 90rem;
   background: url(../../assets/play-modal.jpg);
   background-size: cover;

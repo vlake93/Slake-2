@@ -66,12 +66,14 @@
     width: 50vw;
     z-index: 5;
     transform: translateY(-150rem);
-    transition: all 2s;
+    opacity: 0;
+    transition: transform 2s, opacity 3s;
 
     &-links {
       color: $slake-gold;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       gap: 5rem;
       list-style: none;
       text-transform: uppercase;
@@ -111,6 +113,7 @@
     background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
     background-size: cover;
     position: fixed;
+    opacity: 0;
     left: 0;
     padding: 22rem;
     font-size: 5rem;
@@ -120,6 +123,6 @@
     z-index: 5;
     transform: translateY(150rem);
     border-right: 10px solid $slake-gold;
-    transition: transform 2s;
+    transition: transform 2s, opacity 3s;
   }
 }

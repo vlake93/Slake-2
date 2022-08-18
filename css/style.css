@@ -13,31 +13,11 @@ html {
 header {
   height: 100vh; }
 
-@media screen and (max-width: 112.5em) {
-  html {
-    font-size: 55%; } }
-
-@media screen and (max-width: 87.5em) {
-  html {
-    font-size: 50%; } }
-
-@media screen and (max-width: 79.625em) {
-  html {
-    font-size: 45%; } }
-
-@media screen and (max-width: 71.25em) {
-  html {
-    font-size: 40%; } }
-
-@media screen and (max-width: 63.75em) {
-  html {
-    font-size: 35%; } }
-
 .heading-secondary {
   font-size: 10rem; }
 
 .section-header {
-  max-width: 50%;
+  max-width: 60rem;
   color: #d0a624;
   gap: 3rem;
   display: flex;
@@ -92,8 +72,10 @@ header {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  z-index: 100;
-  border-radius: 30%; }
+  z-index: 10;
+  border-radius: 30%;
+  opacity: 0;
+  transition: opacity 1s; }
   .burger-btn > span,
   .burger-btn > span::before,
   .burger-btn > span::after {
@@ -264,6 +246,9 @@ header {
   z-index: 3;
   opacity: 1; }
 
+input::placeholder {
+  font-size: 1.5rem; }
+
 .stay-form {
   font-size: 2.5rem;
   display: flex;
@@ -272,14 +257,19 @@ header {
   align-items: center;
   gap: 2rem; }
   .stay-form-date {
-    width: 100%;
+    width: 120rem;
     display: flex;
-    gap: 1rem; }
-  .stay-form-location {
-    width: 100%;
-    display: flex;
+    justify-content: center;
     gap: 2rem; }
+    .stay-form-date-input {
+      width: 13rem;
+      height: 3rem; }
+  .stay-form-location {
+    width: 40rem;
+    display: flex; }
   .stay-form-select {
+    margin-left: auto;
+    height: 3rem;
     width: 23rem; }
   .stay-form-number {
     display: flex;
@@ -320,12 +310,13 @@ header {
     color: #d0a624; }
   .vip-form-label {
     display: flex;
-    height: 100%;
+    height: 3 rem;
     justify-content: space-between; }
+    .vip-form-label::placeholder {
+      font-size: 5rem; }
     .vip-form-label-number {
-      display: flex; }
-      .vip-form-label-number-select {
-        border-right: none; }
+      display: flex;
+      height: 3rem; }
       .vip-form-label-number-contact {
         width: 25.5rem; }
   .vip-form-input {
@@ -401,11 +392,13 @@ header {
   width: 50vw;
   z-index: 5;
   transform: translateY(-150rem);
-  transition: all 2s; }
+  opacity: 0;
+  transition: transform 2s, opacity 3s; }
   .nav-hidden-menu-links {
     color: #d0a624;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 5rem;
     list-style: none;
     text-transform: uppercase; }
@@ -434,6 +427,7 @@ header {
   background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
   background-size: cover;
   position: fixed;
+  opacity: 0;
   left: 0;
   padding: 22rem;
   font-size: 5rem;
@@ -443,7 +437,7 @@ header {
   z-index: 5;
   transform: translateY(150rem);
   border-right: 10px solid #d0a624;
-  transition: transform 2s; }
+  transition: transform 2s, opacity 3s; }
 
 .footer {
   padding: 2rem;
@@ -564,18 +558,18 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 90vh; }
+  height: 85rem; }
   .section-stay-container {
     background-color: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 80%;
-    min-height: 80%; }
+    width: 150rem;
+    height: 70rem; }
   .section-stay-carousel {
     margin-right: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,19 +582,19 @@ header {
   background-position: 100% 100%;
   display: flex;
   align-items: center;
-  height: 90vh; }
+  height: 85rem; }
   .section-dine-container {
     margin: 0;
     background-color: #fff;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    max-width: 90%;
-    min-height: 80%; }
+    width: 150rem;
+    height: 70rem; }
   .section-dine-carousel {
     margin-left: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,19 +608,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; }
+  height: 85rem; }
   .section-play-container {
     margin: 0;
     background-color: #fff;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    max-width: 70%;
-    min-height: 80%; }
+    width: 140rem;
+    height: 70rem; }
   .section-play-carousel {
     margin-left: 2rem;
-    height: 50vh;
-    width: 50vw;
+    height: 50rem;
+    width: 120rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,7 +639,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180rem;
+  width: 150rem;
   height: 90rem;
   background: url(../../assets/dine-modal.jpg);
   background-size: cover;
@@ -680,7 +674,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180rem;
+  width: 150rem;
   height: 90rem;
   background: url(../../assets/play-modal.jpg);
   background-size: cover;
@@ -791,3 +785,73 @@ header {
   text-decoration: none; }
   .home-link:link, .home-link:visited {
     color: #1f2c51; }
+
+@media screen and (max-width: 112.5em) {
+  html {
+    font-size: 55%; }
+  .vip-form-label-number-contact {
+    width: 25rem; } }
+
+@media screen and (max-width: 87.5em) {
+  html {
+    font-size: 50%; }
+  .vip-form-label-number-contact {
+    width: 24.5rem; }
+  .burger-btn > span {
+    top: 2.75rem; } }
+
+@media screen and (max-width: 79.625em) {
+  html {
+    font-size: 45%; }
+  .vip-form-label-number-contact {
+    width: 23rem; } }
+
+@media screen and (max-width: 71.25em) {
+  html {
+    font-size: 40%; }
+  .burger-btn > span {
+    top: 3.5rem; } }
+
+@media screen and (max-width: 63.75em) {
+  html {
+    font-size: 35%; }
+  .vip-form-label-number-contact {
+    width: 22rem; }
+  .burger-btn > span {
+    top: 4rem; } }
+
+@media screen and (max-width: 54.75em) {
+  html {
+    font-size: 30%; }
+  .nav-hidden-menu {
+    width: 100vw; }
+  .nav-hidden-image {
+    display: none; }
+  .vip-form-label-number-contact {
+    width: 20.5rem; }
+  .burger-btn > span {
+    top: 4.5rem; }
+  .nav-hidden-menu-links {
+    align-items: center;
+    gap: 10rem;
+    font-size: 10rem; } }
+
+@media screen and (max-width: 47.375em) {
+  html {
+    font-size: 25%; } }
+
+@media screen and (max-width: 40em) {
+  html {
+    font-size: 20%; }
+  .vip-form-label-number-contact {
+    width: 16.5rem; }
+  .burger-btn > span {
+    top: 6.75rem; } }
+
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 15%; }
+  .vip-form-label-number-contact {
+    width: 11.5rem; }
+  .burger-btn > span {
+    top: 9rem; } }
