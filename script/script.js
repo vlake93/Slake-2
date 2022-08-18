@@ -33,6 +33,7 @@ const burger = document.querySelector(".burger-btn");
 const hiddenMenu = document.querySelector(".nav-hidden-menu");
 const hiddenImg = document.querySelector(".nav-hidden-image");
 const hiddenLinks = document.querySelectorAll(".nav-hidden-menu-link");
+const hiddenImage = document.querySelectorAll(".nav-hidden-image");
 
 burger.addEventListener("click", () => {
   console.log("burger", checker.checked);
@@ -94,3 +95,14 @@ const closeModal2 = function () {
 playButton.addEventListener("click", openModal2);
 overlay2.addEventListener("click", closeModal2);
 playCloseModal.addEventListener("click", closeModal2);
+
+for (let i = 0; i < hiddenLinks.length; i++) {
+  hiddenLinks[i].addEventListener("mouseover", () => {
+    hiddenImage[0].style.background =
+      "url(../../assets/linkcover-" + [i] + ".jpg";
+    hiddenImage[0].style.backgroundRepeat = "no-repeat";
+    hiddenImage[0].style.backgroundAttachment = "fixed";
+    hiddenImage[0].style.backgroundPosition = "center";
+    hiddenImage[0].style.backgroundSize = "cover";
+  });
+}

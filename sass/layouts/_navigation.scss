@@ -108,7 +108,8 @@
   }
 
   &-image {
-    background: url(../../assets/dine-cover-2.jpg) no-repeat fixed center;
+    background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
+    background-size: cover;
     position: fixed;
     left: 0;
     padding: 22rem;
@@ -118,6 +119,7 @@
     width: 50vw;
     z-index: 5;
     transform: translateY(150rem);
-    transition: all 2s;
+    border-right: 10px solid $slake-gold;
+    transition: transform 2s;
   }
 }

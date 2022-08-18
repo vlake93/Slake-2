@@ -431,7 +431,8 @@ header {
       transform: scaleX(1); }
 
 .nav-hidden-image {
-  background: url(../../assets/dine-cover-2.jpg) no-repeat fixed center;
+  background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
+  background-size: cover;
   position: fixed;
   left: 0;
   padding: 22rem;
@@ -441,7 +442,8 @@ header {
   width: 50vw;
   z-index: 5;
   transform: translateY(150rem);
-  transition: all 2s; }
+  border-right: 10px solid #d0a624;
+  transition: transform 2s; }
 
 .footer {
   padding: 2rem;
@@ -767,3 +769,25 @@ header {
 
 .thank-header {
   margin-top: 5rem; }
+
+.home-button {
+  margin-top: 2rem;
+  height: 5rem;
+  width: 15rem;
+  background-color: #d0a624;
+  color: #1f2c51;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s; }
+  .home-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .home-button:active {
+    transform: scale(1);
+    box-shadow: none; }
+
+.home-link {
+  font-size: 2rem;
+  text-decoration: none; }
+  .home-link:link, .home-link:visited {
+    color: #1f2c51; }

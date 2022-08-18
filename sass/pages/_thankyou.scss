@@ -38,3 +38,33 @@
 .thank-header {
   margin-top: 5rem;
 }
+
+.home-button {
+  margin-top: 2rem;
+  height: 5rem;
+  width: 15rem;
+  background-color: $slake-gold;
+  color: $slake-blue;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: $shadow-default;
+  }
+  &:active {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+.home-link {
+  font-size: 2rem;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $slake-blue;
+  }
+}
