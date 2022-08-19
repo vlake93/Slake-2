@@ -130,12 +130,18 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      overflow: hidden;
       background-color: $color-white;
       border: 2px solid $slake-gold;
 
       &-image {
         height: 20rem;
         width: auto;
+        transition: all 1s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
 
       &-text {

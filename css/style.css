@@ -683,11 +683,15 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
     background-color: #fff;
     border: 2px solid #d0a624; }
     .dine-modal-grid-content-image {
       height: 20rem;
-      width: auto; }
+      width: auto;
+      transition: all 1s; }
+      .dine-modal-grid-content-image:hover {
+        transform: scale(1.2); }
     .dine-modal-grid-content-text {
       text-align: center;
       font-size: 2rem;
