@@ -2,19 +2,11 @@
   html {
     font-size: 55%;
   }
-
-  .vip-form-label-number-contact {
-    width: 25rem;
-  }
 }
 
 @media screen and (max-width: 87.5em) {
   html {
     font-size: 50%;
-  }
-
-  .vip-form-label-number-contact {
-    width: 24.5rem;
   }
 
   .burger-btn > span {
@@ -25,10 +17,6 @@
 @media screen and (max-width: 79.625em) {
   html {
     font-size: 45%;
-  }
-
-  .vip-form-label-number-contact {
-    width: 23rem;
   }
 }
 
@@ -47,10 +35,6 @@
     font-size: 35%;
   }
 
-  .vip-form-label-number-contact {
-    width: 22rem;
-  }
-
   .burger-btn > span {
     top: 4rem;
   }
@@ -67,10 +51,6 @@
 
   .nav-hidden-image {
     display: none;
-  }
-
-  .vip-form-label-number-contact {
-    width: 20.5rem;
   }
 
   .burger-btn > span {
@@ -95,8 +75,12 @@
     font-size: 20%;
   }
 
-  .vip-form-label-number-contact {
-    width: 16.5rem;
+  .nav {
+    font-size: 3.8rem;
+  }
+
+  .nav-logo {
+    height: 12rem;
   }
 
   .burger-btn > span {
@@ -109,8 +93,12 @@
     font-size: 15%;
   }
 
-  .vip-form-label-number-contact {
-    width: 11.5rem;
+  .nav {
+    font-size: 5rem;
+  }
+
+  .nav-logo {
+    height: 15rem;
   }
 
   .burger-btn > span {

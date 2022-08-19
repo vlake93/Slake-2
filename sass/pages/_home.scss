@@ -28,7 +28,7 @@
     align-items: center;
     width: 150rem;
     height: 70rem;
-    animation: moveInLeft 1.5s ease-in-out forwards;
+    animation: moveInLeft 2s ease forwards;
   }
 
   &-carousel {
@@ -59,7 +59,7 @@
     align-items: center;
     width: 150rem;
     height: 70rem;
-    animation: moveInRight 1.5s ease-in-out forwards;
+    // animation: moveInBottom 2s ease forwards;
   }
 
   &-carousel {
@@ -91,7 +91,7 @@
     align-items: center;
     width: 140rem;
     height: 70rem;
-    animation: moveInBottom 1.5s ease-in-out forwards;
+    animation: moveInBottom 2s ease forwards;
   }
 
   &-carousel {

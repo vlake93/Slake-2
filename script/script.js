@@ -34,10 +34,10 @@ window.addEventListener("scroll", () => {
   if (scrollLength >= 400 && scrollLength <= 900) {
     console.log(scrollLength);
     sectionStay.style.display = "flex";
-  } else if (scrollLength >= 850 && scrollLength <= 1100) {
+  } else if (scrollLength >= 900 && scrollLength <= 1100) {
     console.log(scrollLength);
     sectionDine.style.display = "flex";
-  } else if (scrollLength >= 1550 && scrollLength <= 1800) {
+  } else if (scrollLength >= 1300 && scrollLength <= 1400) {
     console.log(scrollLength);
     sectionPlay.style.display = "flex";
   }
@@ -78,8 +78,8 @@ hiddenLinks.forEach((link) => {
 
 const modal = document.querySelector(".dine-modal");
 const overlay = document.querySelector(".overlay");
-const dineCloseModal = document.querySelector(".dine-close-modal");
 const dineButton = document.querySelector(".dine-button");
+const dineCloseModal = document.querySelector(".dine-close-modal");
 
 const openModal = function () {
   modal.classList.remove("hidden");
