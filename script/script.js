@@ -96,28 +96,6 @@ for (let i = 0; i < 2; i++) {
   CloseModal[i].addEventListener("click", closeModal);
   overlay[i].addEventListener("click", closeModal);
 }
-// modalButton.addEventListener("click", openModal);
-// CloseModal.addEventListener("click", closeModal);
-// overlay.addEventListener("click", closeModal);
-
-// const modal2 = document.querySelector(".play-modal");
-// const overlay2 = document.querySelector(".overlay-2");
-// const playButton = document.querySelector(".play-button");
-// const playCloseModal = document.querySelector(".play-close-modal");
-
-// const openModal2 = function () {
-//   modal2.classList.remove("hidden");
-//   overlay2.classList.remove("hidden");
-// };
-
-// const closeModal2 = function () {
-//   modal2.classList.add("hidden");
-//   overlay2.classList.add("hidden");
-// };
-
-// playButton.addEventListener("click", openModal2);
-// overlay2.addEventListener("click", closeModal2);
-// playCloseModal.addEventListener("click", closeModal2);
 
 for (let i = 0; i < hiddenLinks.length; i++) {
   hiddenLinks[i].addEventListener("mouseover", () => {

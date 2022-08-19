@@ -749,8 +749,7 @@ input::placeholder {
   backdrop-filter: blur(3px);
   z-index: 5; }
 
-.dine-close-modal,
-.play-close-modal {
+.close-modal {
   color: #d0a624;
   position: absolute;
   top: 0;
