@@ -11,97 +11,80 @@
   }
 }
 
-.section-stay {
+.section-stay,
+.section-dine,
+.section-play {
   margin: $margin-section;
+  display: flex;
+  align-items: center;
+  height: 85rem;
+}
+
+.section-stay-container,
+.section-dine-container,
+.section-play-container {
+  align-items: center;
+  display: none;
+  width: 150rem;
+  height: 70rem;
+  background-color: $color-white;
+}
+
+.section-stay-carousel,
+.section-dine-carousel,
+.section-play-carousel {
+  height: 50rem;
+  width: 120rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $shadow-default;
+}
+
+.section-stay {
   background: url(../../assets/stay-cover-1.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
-  height: 85rem;
 
   &-container {
-    background-color: $color-white;
-    display: none;
     justify-content: flex-start;
-    align-items: center;
-    width: 150rem;
-    height: 70rem;
     animation: fadeIn 2s ease forwards;
   }
 
   &-carousel {
     margin-right: 2rem;
-    height: 50rem;
-    width: 120rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: $shadow-default;
   }
 }
 
 .section-dine {
-  margin: $margin-section;
   background: url(../../assets/dine-cover-2.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
-  display: flex;
-  align-items: center;
-  height: 85rem;
 
   &-container {
-    margin: 0;
-    background-color: $color-white;
-    display: none;
     flex-direction: row-reverse;
-    align-items: center;
-    width: 150rem;
-    height: 70rem;
     animation: fadeIn 2s ease forwards;
   }
 
   &-carousel {
     margin-left: 2rem;
-    height: 50rem;
-    width: 120rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: $shadow-default;
   }
 }
 
 .section-play {
-  margin: $margin-section;
   background: url(../../assets/play-cover.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 85rem;
 
   &-container {
-    margin: 0;
-    background-color: $color-white;
-    display: none;
     flex-direction: row-reverse;
-    align-items: center;
-    width: 140rem;
-    height: 70rem;
     animation: moveInBottom 2s ease forwards;
   }
 
   &-carousel {
     margin-left: 2rem;
-    height: 50rem;
-    width: 120rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: $shadow-default;
   }
 }
 
