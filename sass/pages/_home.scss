@@ -28,7 +28,7 @@
     align-items: center;
     width: 150rem;
     height: 70rem;
-    animation: moveInLeft 2s ease forwards;
+    animation: fadeIn 2s ease forwards;
   }
 
   &-carousel {
@@ -59,7 +59,7 @@
     align-items: center;
     width: 150rem;
     height: 70rem;
-    // animation: moveInBottom 2s ease forwards;
+    animation: fadeIn 2s ease forwards;
   }
 
   &-carousel {
@@ -115,21 +115,23 @@
   display: none;
 }
 
-.dine-modal {
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 150rem;
   height: 90rem;
-  background: url(../../assets/dine-modal.jpg);
+  background: url(../../assets/modal-0.jpg);
   background-size: cover;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   animation: fadeIn 1s ease forwards;
+}
 
+.dine-modal {
   &-header {
     font-size: 4rem;
     text-align: center;
@@ -161,22 +163,22 @@
     }
   }
 }
+// .play-modal {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 150rem;
+//   height: 90rem;
+//   background: url(../../assets/play-modal.jpg);
+//   background-size: cover;
+//   padding: 6rem;
+//   border-radius: 5px;
+//   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+//   z-index: 10;
+//   animation: fadeIn 1s ease forwards;
 
 .play-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150rem;
-  height: 90rem;
-  background: url(../../assets/play-modal.jpg);
-  background-size: cover;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  animation: fadeIn 1s ease forwards;
-
   &-header {
     color: $slake-gold;
     font-size: 4rem;

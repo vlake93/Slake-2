@@ -76,43 +76,48 @@ hiddenLinks.forEach((link) => {
   });
 });
 
-const modal = document.querySelector(".dine-modal");
-const overlay = document.querySelector(".overlay");
-const dineButton = document.querySelector(".dine-button");
-const dineCloseModal = document.querySelector(".dine-close-modal");
+const modal = document.querySelectorAll(".modal");
+const overlay = document.querySelectorAll(".overlay");
+const modalButton = document.querySelectorAll(".modal-button");
+const CloseModal = document.querySelectorAll(".close-modal");
 
-const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
+for (let i = 0; i < 2; i++) {
+  const openModal = function () {
+    modal[i].classList.remove("hidden");
+    modal[i].style.background = "url(../../assets/modal-" + [i] + ".jpg";
+    overlay[i].classList.remove("hidden");
+  };
 
-const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
+  const closeModal = function () {
+    modal[i].classList.add("hidden");
+    overlay[i].classList.add("hidden");
+  };
+  modalButton[i].addEventListener("click", openModal);
+  CloseModal[i].addEventListener("click", closeModal);
+  overlay[i].addEventListener("click", closeModal);
+}
+// modalButton.addEventListener("click", openModal);
+// CloseModal.addEventListener("click", closeModal);
+// overlay.addEventListener("click", closeModal);
 
-dineButton.addEventListener("click", openModal);
-dineCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+// const modal2 = document.querySelector(".play-modal");
+// const overlay2 = document.querySelector(".overlay-2");
+// const playButton = document.querySelector(".play-button");
+// const playCloseModal = document.querySelector(".play-close-modal");
 
-const modal2 = document.querySelector(".play-modal");
-const overlay2 = document.querySelector(".overlay-2");
-const playButton = document.querySelector(".play-button");
-const playCloseModal = document.querySelector(".play-close-modal");
+// const openModal2 = function () {
+//   modal2.classList.remove("hidden");
+//   overlay2.classList.remove("hidden");
+// };
 
-const openModal2 = function () {
-  modal2.classList.remove("hidden");
-  overlay2.classList.remove("hidden");
-};
+// const closeModal2 = function () {
+//   modal2.classList.add("hidden");
+//   overlay2.classList.add("hidden");
+// };
 
-const closeModal2 = function () {
-  modal2.classList.add("hidden");
-  overlay2.classList.add("hidden");
-};
-
-playButton.addEventListener("click", openModal2);
-overlay2.addEventListener("click", closeModal2);
-playCloseModal.addEventListener("click", closeModal2);
+// playButton.addEventListener("click", openModal2);
+// overlay2.addEventListener("click", closeModal2);
+// playCloseModal.addEventListener("click", closeModal2);
 
 for (let i = 0; i < hiddenLinks.length; i++) {
   hiddenLinks[i].addEventListener("mouseover", () => {
