@@ -23,11 +23,12 @@
 
   &-container {
     background-color: $color-white;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     width: 150rem;
     height: 70rem;
+    animation: moveInLeft 1.5s ease-in-out forwards;
   }
 
   &-carousel {
@@ -53,12 +54,12 @@
   &-container {
     margin: 0;
     background-color: $color-white;
-    display: flex;
-
+    display: none;
     flex-direction: row-reverse;
     align-items: center;
     width: 150rem;
     height: 70rem;
+    animation: moveInRight 1.5s ease-in-out forwards;
   }
 
   &-carousel {
@@ -85,11 +86,12 @@
   &-container {
     margin: 0;
     background-color: $color-white;
-    display: flex;
+    display: none;
     flex-direction: row-reverse;
     align-items: center;
     width: 140rem;
     height: 70rem;
+    animation: moveInBottom 1.5s ease-in-out forwards;
   }
 
   &-carousel {
@@ -126,6 +128,7 @@
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  animation: fadeIn 1s ease forwards;
 
   &-header {
     font-size: 4rem;
@@ -172,6 +175,7 @@
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  animation: fadeIn 1s ease forwards;
 
   &-header {
     color: $slake-gold;

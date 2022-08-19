@@ -15,3 +15,12 @@ html {
 header {
   height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $slake-gold;
+  border-radius: 10px;
+}

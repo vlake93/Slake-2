@@ -24,8 +24,23 @@ for (let i = 0; i < plus.length; i++) {
   });
 }
 
+const sectionStay = document.querySelector(".section-stay-container");
+const sectionDine = document.querySelector(".section-dine-container");
+const sectionPlay = document.querySelector(".section-play-container");
+
 window.addEventListener("scroll", () => {
   burger.style.opacity = "1";
+  const scrollLength = window.scrollY;
+  if (scrollLength >= 400 && scrollLength <= 900) {
+    console.log(scrollLength);
+    sectionStay.style.display = "flex";
+  } else if (scrollLength >= 850 && scrollLength <= 1100) {
+    console.log(scrollLength);
+    sectionDine.style.display = "flex";
+  } else if (scrollLength >= 1550 && scrollLength <= 1800) {
+    console.log(scrollLength);
+    sectionPlay.style.display = "flex";
+  }
 });
 
 const checker = document.querySelector(".burger");
@@ -104,6 +119,7 @@ for (let i = 0; i < hiddenLinks.length; i++) {
     hiddenImage[0].style.background =
       "url(../../assets/linkcover-" + [i] + ".jpg";
     hiddenImage[0].style.backgroundRepeat = "no-repeat";
+    hiddenImage[0].style.backgroundColor = "#1f2c51";
     hiddenImage[0].style.backgroundAttachment = "fixed";
     hiddenImage[0].style.backgroundPosition = "center";
     hiddenImage[0].style.backgroundSize = "cover";

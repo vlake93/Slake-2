@@ -13,6 +13,43 @@ html {
 header {
   height: 100vh; }
 
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-thumb {
+  background: #d0a624;
+  border-radius: 10px; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .heading-secondary {
   font-size: 10rem; }
 
@@ -261,7 +298,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     gap: 2rem; }
-    .stay-form-date-input {
+    -webki .stay-form-date-input {
       width: 13rem;
       height: 3rem; }
   .stay-form-location {
@@ -561,11 +598,12 @@ input::placeholder {
   height: 85rem; }
   .section-stay-container {
     background-color: #fff;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     width: 150rem;
-    height: 70rem; }
+    height: 70rem;
+    animation: moveInLeft 1.5s ease-in-out forwards; }
   .section-stay-carousel {
     margin-right: 2rem;
     height: 50rem;
@@ -586,11 +624,12 @@ input::placeholder {
   .section-dine-container {
     margin: 0;
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: row-reverse;
     align-items: center;
     width: 150rem;
-    height: 70rem; }
+    height: 70rem;
+    animation: moveInRight 1.5s ease-in-out forwards; }
   .section-dine-carousel {
     margin-left: 2rem;
     height: 50rem;
@@ -612,11 +651,12 @@ input::placeholder {
   .section-play-container {
     margin: 0;
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: row-reverse;
     align-items: center;
     width: 140rem;
-    height: 70rem; }
+    height: 70rem;
+    animation: moveInBottom 1.5s ease-in-out forwards; }
   .section-play-carousel {
     margin-left: 2rem;
     height: 50rem;
@@ -646,7 +686,8 @@ input::placeholder {
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10; }
+  z-index: 10;
+  animation: fadeIn 1s ease forwards; }
   .dine-modal-header {
     font-size: 4rem;
     text-align: center;
@@ -681,7 +722,8 @@ input::placeholder {
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10; }
+  z-index: 10;
+  animation: fadeIn 1s ease forwards; }
   .play-modal-header {
     color: #d0a624;
     font-size: 4rem;
