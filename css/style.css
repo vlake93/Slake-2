@@ -640,7 +640,8 @@ input::placeholder {
   background: url(../../assets/play-cover.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 1; }
   .section-play-container {
     flex-direction: row-reverse;
     animation: moveInBottom 2s ease forwards; }
@@ -864,3 +865,9 @@ input::placeholder {
     height: 15rem; }
   .burger-btn > span {
     top: 9rem; } }
+
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 12.5%; }
+  .burger-btn > span {
+    top: 11rem; } }

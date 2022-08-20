@@ -92,6 +92,7 @@ for (let i = 0; i < 2; i++) {
     modal[i].classList.add("hidden");
     overlay[i].classList.add("hidden");
   };
+
   modalButton[i].addEventListener("click", openModal);
   CloseModal[i].addEventListener("click", closeModal);
   overlay[i].addEventListener("click", closeModal);
