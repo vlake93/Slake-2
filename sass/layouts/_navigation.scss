@@ -14,7 +14,6 @@
     height: 8rem;
     margin-bottom: 2rem;
     display: block;
-    // border-top: 2px solid $slake-gold;
   }
 
   &-links {
@@ -110,7 +109,7 @@
   }
 
   &-image {
-    background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
+    background: url(../assets/linkcover-home.jpg) no-repeat fixed center;
     background-size: cover;
     position: fixed;
     opacity: 0;

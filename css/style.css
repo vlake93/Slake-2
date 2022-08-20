@@ -222,45 +222,45 @@ header {
   opacity: 1; }
 
 .item-1 {
-  background: url("../../assets/stay-1.jpg");
+  background: url("../assets/stay-1.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-2 {
-  background: url("../../assets/stay-2.jpg");
+  background: url("../assets/stay-2.jpg");
   background-size: cover; }
 
 .item-3 {
-  background: url("../../assets/stay-3.jpg");
+  background: url("../assets/stay-3.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-4 {
-  background: url("../../assets/dine-1.jpg");
+  background: url("../assets/dine-1.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-5 {
-  background: url("../../assets/dine-2.jpg");
+  background: url("../assets/dine-2.jpg");
   background-size: cover; }
 
 .item-6 {
-  background: url("../../assets/dine-3.jpg");
+  background: url("../assets/dine-3.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-7 {
-  background: url("../../assets/play-1.jpg");
+  background: url("../assets/play-1.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-8 {
-  background: url("../../assets/play-2.jpg");
+  background: url("../assets/play-2.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
 .item-9 {
-  background: url("../../assets/play-3.jpg");
+  background: url("../assets/play-3.jpg");
   background-size: cover;
   background-position: 100% 100%; }
 
@@ -462,7 +462,7 @@ input::placeholder {
       transform: scaleX(1); }
 
 .nav-hidden-image {
-  background: url(../../assets/linkcover-home.jpg) no-repeat fixed center;
+  background: url(../assets/linkcover-home.jpg) no-repeat fixed center;
   background-size: cover;
   position: fixed;
   opacity: 0;
