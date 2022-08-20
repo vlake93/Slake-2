@@ -616,7 +616,7 @@ input::placeholder {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .section-stay {
-  background: url(../assets/stay-cover-1.jpg) no-repeat center center scroll;
+  background: url(/assets/stay-cover-1.jpg) no-repeat center center scroll;
   background-size: cover;
   background-position: 100% 100%;
   justify-content: flex-end; }
