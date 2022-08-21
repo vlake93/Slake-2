@@ -100,8 +100,7 @@ for (let i = 0; i < 2; i++) {
 
 for (let i = 0; i < hiddenLinks.length; i++) {
   hiddenLinks[i].addEventListener("mouseover", () => {
-    hiddenImage[0].style.background =
-      "url(../../assets/linkcover-" + [i] + ".jpg";
+    hiddenImage[0].style.background = "url(../assets/linkcover-" + [i] + ".jpg";
     hiddenImage[0].style.backgroundRepeat = "no-repeat";
     hiddenImage[0].style.backgroundColor = "#1f2c51";
     hiddenImage[0].style.backgroundAttachment = "fixed";
