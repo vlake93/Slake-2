@@ -84,7 +84,7 @@ const CloseModal = document.querySelectorAll(".close-modal");
 for (let i = 0; i < 2; i++) {
   const openModal = function () {
     modal[i].classList.remove("hidden");
-    modal[i].style.background = "url(../../assets/modal-" + [i] + ".jpg";
+    modal[i].style.background = "url(../assets/modal-" + [i] + ".jpg";
     overlay[i].classList.remove("hidden");
   };
 

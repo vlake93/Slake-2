@@ -668,7 +668,7 @@ input::placeholder {
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 9999;
   animation: fadeIn 1s ease forwards; }
 
 .dine-modal-header {
@@ -723,8 +723,7 @@ input::placeholder {
       font-size: 2rem;
       margin-bottom: 2rem; }
 
-.overlay,
-.overlay-2 {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
